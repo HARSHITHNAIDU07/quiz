@@ -1,4 +1,70 @@
-.box{
-    display:flex;
-    align-items: center;
+.box {
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    justify-content: center; /* center vertically */
+    align-items: center;     /* center horizontally */
+    background-color: rgb(222, 209, 209);
+    width: 50%;
+               /* needed for vertical centering */
+    border-radius: 5%;
+    margin-left: 25%;
+}
+
+.question {
+    font-weight: bold;
+    text-align: center;
+    width: 100%; 
+    font-size: large;
+                /* ensure it takes full width for new line */
+}
+
+.option{
+    width:80%;
+    text-align: center;
+    border: solid black 2px;
+    border-radius: 5%;
+    margin:15px;
+    padding: 5px;
+    font-size:medium;
+    box-shadow:4px 4px;
+}
+
+.option:hover{
+    width:80%;
+    text-align: center;
+    background-color: rgb(192, 222, 248);
+    border: solid black 2px;
+    border-radius: 5%;
+    margin:15px;
+    padding: 5px;
+    font-size:medium;
+
+}
+.option.selected{
+    width:80%;
+    text-align: center;
+    background-color: rgb(42, 201, 74);
+    border: solid black 2px;
+    border-radius: 5%;
+    margin:15px;
+    padding: 5px;
+    font-size:medium;
+}
+
+.nav{
+    background-color: rgb(32, 71, 226);
+    color:white;
+    margin:3px;
+    padding:5px;
+    width:90px;
+}
+
+.nav:hover{
+    background-color: rgb(32, 71, 226);
+    color:white;
+    margin:3px;
+    padding:5px;
+    width:90px;
+    box-shadow:4px 4px;
+    font-weight: bold;
 }
